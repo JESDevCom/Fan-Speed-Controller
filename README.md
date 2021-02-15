@@ -51,7 +51,12 @@ Part VII. KiCAD Schematic
    * SMD resistors for the 18k, 240k, 270k, 24 Ohm Resistors are required to make space for the Knob Potentiometer.
    * Certain traces that follow from VAC input, to the TRIAC, and out to the motor must be fat traces (4mm) to stay below current and heat limits of having covered traces.
    * 0.2mm minimum distance between traces is important for 120[Vac] designs.
- 
+
+Part IX. Assembly
+   * Remove the plastic & copper PCB mounting stands that connect the PCB to the metal outlet mount.
+   * Use a Soldering Iron or Hot Air Station to remove the inductor, DIAC, TRIAC, and Capacitors.
+   * Resolder the new and old components to the new board. 
+
 Part IX. Results
    * TBD
   
