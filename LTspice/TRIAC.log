@@ -1,0 +1,122 @@
+Circuit: * C:\Users\John\Documents\LTspiceXVII\projects\TRIAC Fan Speed Controller\TRIAC.asc
+
+Direct Newton iteration for .op point succeeded.
+.step pot=1
+.step pot=1.25893
+.step pot=1.58489
+.step pot=1.99526
+.step pot=2.51189
+.step pot=3.16228
+.step pot=3.98107
+.step pot=5.01187
+.step pot=6.30957
+.step pot=7.94328
+.step pot=10
+.step pot=12.5893
+.step pot=15.8489
+.step pot=19.9526
+.step pot=25.1189
+.step pot=31.6228
+.step pot=39.8107
+.step pot=50.1187
+.step pot=63.0957
+.step pot=79.4328
+.step pot=100
+.step pot=125.893
+.step pot=158.489
+.step pot=199.526
+.step pot=251.189
+.step pot=316.228
+.step pot=398.107
+.step pot=501.187
+.step pot=630.957
+.step pot=794.328
+.step pot=1000
+
+
+Measurement: r1_pwr
+  step	0.84*i(r1)*v(n007,n006)
+     1	0.00165765
+     2	0.00164651
+     3	0.00165152
+     4	0.00165151
+     5	0.00164766
+     6	0.00164973
+     7	0.00164728
+     8	0.00164907
+     9	0.00165549
+    10	0.00164935
+    11	0.00164804
+    12	0.00165214
+    13	0.00164911
+    14	0.00165525
+    15	0.0016506
+    16	0.00164964
+    17	0.00164875
+    18	0.00164851
+    19	0.00164705
+    20	0.00164553
+    21	0.00164431
+    22	0.00164241
+    23	0.00164004
+    24	0.00163702
+    25	0.00163323
+    26	0.00162847
+    27	0.00162249
+    28	0.00161708
+    29	0.00160312
+    30	0.00159362
+    31	0.00157875
+
+Measurement: r5_pwr
+  step	0.84*i(r5)*v(n006,n003)
+     1	1.72456e-007
+     2	2.16136e-007
+     3	2.72611e-007
+     4	3.42206e-007
+     5	4.32144e-007
+     6	5.43804e-007
+     7	6.85853e-007
+     8	8.62696e-007
+     9	1.08428e-006
+    10	1.36555e-006
+    11	1.71908e-006
+    12	2.16372e-006
+    13	2.72275e-006
+    14	3.42616e-006
+    15	4.3118e-006
+    16	5.42386e-006
+    17	6.82264e-006
+    18	8.58109e-006
+    19	1.07874e-005
+    20	1.35593e-005
+    21	1.70346e-005
+    22	2.13908e-005
+    23	2.68407e-005
+    24	3.3652e-005
+    25	4.21478e-005
+    26	5.27147e-005
+    27	6.58174e-005
+    28	8.1997e-005
+    29	0.000101869
+    30	0.000126109
+    31	0.000155409
+
+
+Date: Tue Feb 09 17:14:29 2021
+Total elapsed time: 4.805 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 18407
+traniter = 18385
+tranpoints = 6893
+accept = 6193
+rejected = 700
+matrix size = 64
+fillins = 81
+solver = Normal
+Matrix Compiler1: 7.01 KB object code size  1.1/0.5/[0.3]
+Matrix Compiler2: off  [0.3]/0.6/0.3
+
