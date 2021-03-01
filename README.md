@@ -43,10 +43,10 @@ Part VI. LTspice Simulation
 Part VII. KiCAD Schematic
    * Since this Controller adjusts the blower's speed on the fireplace and this motor is rated for 1.8 [A], let's design the PCB for double the max operating current because we can :). 
    * The only added components from the original design:
-      1. 4[A] fuse will be added, 
-      2. a 24 Ohm resistor will be added in series with the potentionmeter since the potentiometer's minimum resistance is 0.2 [Ohms],
+      1. 4 [A] fuse will be added, 
+      2. a 24 [Ohm] resistor will be added in series with the potentionmeter since the potentiometer's minimum resistance is 0.2 [Ohms],
       3. a toggle switch to disconnect the controller from the 120 Volt mains to recreated the off detent that was on the original board, 
-      4. and our design will not have any exposed PCB traces from the fabriactor.
+      4. and our design will not have any exposed PCB traces from the Fab.
       
    * We will reuse:
       1. 2.4k through-hole resistor,
