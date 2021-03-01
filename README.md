@@ -21,19 +21,19 @@ Part IV. Software Used
 3. Matlab
 
 Part V. Parts Used
-1. 18k,  (Min: 0.25[W], Bought: 0.5[W])
-2. 240k, (Min: 0.25[W], Bought: 0.5[W])
-3. 270k, (Min: 0.25[W], Bought: 0.5[W])
-4. 2.4k, (Min: 0.5[W], Bought: 1[W])
-5. 24, (Bought: 1[W])
-5. 91A1A-B28-A22L, 0.2 [Ohms] to 250 [kOhms] Linear Potentiometer, Turn Knob Style, 2[W] max.
-6. BTA16-600B, TRIAC (non-insulated tab package)
-7. DB3, DIAC (15 [uA] breakover current is my guess).
-8. 100[nF], Film Capacitor 250[Vdc]
-9. 100[nF], Film Capacitor 250[Vdc]
-9. 47[nF], Ceramic Capacitor 400[Vdc]
-10. Inductor 7[uH] @ 1[KHz] (Measured with Scope, see characterization plot in Matlab folder)
-11. 1/4" Dia. Metal Knob for Potentiometer
+1. RV1, 91A1A-B28-A22L, 0.2 [Ohms] to 250 [kOhms] Linear Potentiometer, Turn Knob Style, 2[W] max.
+2. R1, 2.4k, (Min: 0.5[W], Bought: 1[W])
+3. R2, 270k, (Min: 0.25[W], Bought: 0.5[W])
+4. R3, 18k,  (Min: 0.25[W], Bought: 0.5[W])
+5. R4, 240k, (Min: 0.25[W], Bought: 0.5[W])
+6. R5, 24, (Bought: 1[W])
+7. U1, BTA16-600B, TRIAC (non-insulated tab package)
+8. U2, DB3, DIAC (15 [uA] breakover current is my guess).
+9. C3, 100 [nF], Film Capacitor 250[Vdc]
+10. C2, 100[nF], Film Capacitor 250[Vdc]
+11. C1, 47[nF], Ceramic Capacitor 1 [kVdc] (X7R)
+12. L1, Inductor 7[uH] @ 1[KHz] (Measured with Scope, see characterization plot in Matlab folder)
+13. 1/4" Dia. Metal Knob for Potentiometer
 
 Part VI. LTspice Simulation
    * Running the LTSpice model created from the PCB components inside the YLFC700 shows that the potentiometer does fall out of spec even when the 47 [nF] is good.
@@ -60,7 +60,7 @@ Part VII. KiCAD Schematic
       2. 240k through-hole with a 240k in a 1206 package,
       3. 270k through-hole with a 270k in a 1206 package,
       4. the no-name slide potentiometer with a Bourns 91A1A-B28-A22L Knob Potentiometer,
-      5. 47 [nF] 400 [Vdc] Radial Film Capacitor with a 47 [nF] 630 [Vdc] (C0G) Radial Ceramic Capacitor
+      5. 47 [nF] 400 [Vdc] Radial Film Capacitor with a 47 [nF] 1 [kVdc] (X7R) Radial Ceramic Capacitor
      
    * A Bourns 91A1A-B28-A22L Knob Potentiometer (2[W], 0.2 to 250k [Ohms], linear) will repalce the original slide potentiometer (100[mW], 30 to 300k [Ohms], log). Since this potentiometer is in parallel with two other resistors, a 240k and 296k [ohms], the max resistance of the potentiometer doesn't matter that much. However, the minimum reistance does matter because it greatly affects the max speed (ie, the potentiometer controls rate that the capacitors charges, which controls how the 120 [Vac] sinewave is chopped; thereby, changing the fan speed. marvelous).
    * Since the potentiometer goes down to 0.2 [Ohms], an excessive amount of current is drawn across the potentiometer, so a 24 Ohm resistor will be added in series with the potentiometer to approximately match the original slide potentiometer's minimum resistance. 
@@ -79,8 +79,9 @@ Part IX. Assembly
 Part IX. Results
    * When removing the capacitors from the original board, the 47 [nF] Film Capacitor was measured at 1.2 [nF]. The 100 [nF] film capacitors were still in 10% spec.
    * After simulating the LTspice model with such a value (1.0nF) it became clear that the reason the potentiometer failed was because the 47 [nF] capacitor failed. This 47 [nF] capacitor is marked C1 on the original board (YLFC700).
-   * Reasons for failure include: overheating, or transient overvoltage spikes due to the motor. (The latter is my guess for reason of failure).
-   * Solution: Use an automotive grade cermaic capacitor that has a higher voltage rating. 
+   * Reason for failure: the capacitor is configured as a snubber and there is likely overvoltage spikes due to the motor.
+   * Solution: Use a cermaic capacitor that has a higher maximum voltage rating that can withstand spikes resulting from the TRIAC switching. 
+   * Successful operation: Waiting on new capacitor as of 2/28/2022.
   
    
 Part X. Legal Agreement
