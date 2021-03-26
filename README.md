@@ -22,7 +22,7 @@
 
 **Part V. Parts Used**
 1. RV1, 91A1A-B28-A22L, 0.2 [Ohms] to 250 [kOhms] Linear Potentiometer, Turn Knob Style, 2[W] max.
-2. R1, 2.4k, (Min: 0.5[W], Bought: 1[W])
+2. R1, 2.4k, Reused
 3. R2, 270k, (Min: 0.25[W], Bought: 0.5[W])
 4. R3, 18k,  (Min: 0.25[W], Bought: 0.5[W])
 5. R4, 240k, (Min: 0.25[W], Bought: 0.5[W])
