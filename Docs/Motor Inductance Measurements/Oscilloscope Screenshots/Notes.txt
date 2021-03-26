@@ -1,0 +1,13 @@
+Channel 1 - Placed on Motor Lead to Main Neutral
+Channel 2 - Placed on Output of TRIAC to Motor
+
+Images:
+SDS1 - FFT CH3, Windowing: Rectangle, Center Freq: 0 Hz, Hz/Div: 20KHz
+SDS2 - FFT CH1, Windowing: Hamming, Center Freq: 60 Hz, Hz/Div: 500Hz
+SDS3 - FFT CH1, Windowing: Hamming, Center Freq: 60 Hz, Hz/Div: 500Hz
+SDS4 - FFT CH3, Windowing: Hamming, Center Freq: 60 Hz, Hz/Div: 500Hz
+SDS5 - General Image of Channels
+SDS6 - Motor on Highest Speed from TRIAC
+SDS7 - Motor on Lowest Speed from TRIAC
+SDS8 - General Image of Channels
+SDS9 - Same as SDS8, but with Measurements displayed

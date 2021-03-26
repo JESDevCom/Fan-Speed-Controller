@@ -1,0 +1,26 @@
+Name: John Schulz
+Date: 3/11/2021
+Summary: Motor Inductance Calculations 
+
+Equipment: 
+DMM: Fluke 87V
+Power Source: 120V Wall Outlet
+
+Measurements:
+Freq = 60 Hz
+Rdc = 7.9 Ohms
+Vac = 75.3 Vrms(low speed)     119.4 Vrms(high speed)
+Iac = 1.133 Irms(low speed)    1.741 Vrms(high speed)
+
+Impedance Calculations:
+Z = Vac/Iac = 75.3/1.133 = 66.461 (low speed)
+            = 119.4/1.741 = 68.581 (high speed)
+
+Reactance Calculations:
+XL = sqrt(Z^2 - Rdc^2) = 65.989 (low speed)
+                       = 68.124 (high speed)
+
+Inductance Calculations: 
+L = XL/(2*pi*Freq) = 175 mH (low speed)
+                   = 181 mH (high speed)
+
