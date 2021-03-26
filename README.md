@@ -5,7 +5,7 @@ Part I. Introduction
 
 Part II. Theory for Failure
    * The potentiometer is rated for 100[mW].
-   * The reason the potentiometer fauks is because the 47 [nF] Film capacitor begins to fail from transient voltage spikes after many startups.
+   * The reason the potentiometer fails is because the 47 [nF] Film capacitor begins to fail from transient voltage spikes after many startups.
    
 Part III. Testing Equipment Used
 1. Fluke 87V Digital Multimeter
